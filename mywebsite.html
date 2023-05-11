@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <!-- BEGIN TIKTOK BASE CODE -->
+
+<script>
+    
+//!function (w, d, t) {
+//  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+//
+//  ttq.load('CBUF2Q3C77U40OTRC8UG'); // my pixel ID
+//    
+////   ttq.load('C8JRFTKLGSOAGACE7860');
+//    
+//    
+//    ttq.page();
+//}(window, document, 'ttq');
+//    
+    
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+
+  ttq.load('CF738DBC77U110MJRGLG');
+  ttq.page();
+}(window, document, 'ttq');
+    
+</script>
+
+
+	<!-- END TIKTOK BASE CODE -->
+        
+        
+
+        <title>Hello World | Store</title>
+    </head>
+	<body onload="pageLoaded()">
+	<div class="content">
+		<header>
+			<h1 class="title">Hello World | Store</h1>
+			<div class="cart">
+				Items In Cart:<input type="number" id="cart-items" width="10" height="10" value="0">
+			</div>
+		</header>
+		
+	   <container>
+          <div>
+            Logged in as email@example.com
+          </div>
+       </container>
+
+	    <table>
+	    	<tr>
+	    		<td>
+       				<div class="box"> 
+       					<div class="item-title-1">Product 1</div> 
+       					<div class="item-product-id-1">Product ID: 5678AB</div>
+                        <div class="item-price-1">$29.99</div>
+
+                        <button onclick="viewContent('Product 1','5678AB',29.99)">View Content Details</button> 
+                        <button id="add-to-cart-button-1" onclick="addToCart('Product 1','5678AB',29.99)">Add To Cart</button>
+       				</div>
+       			</td>
+                <td>
+                	<div class="box">
+	                	<div class="item-title-2">Product 2</div> 
+	                	<div class="item-product-id-2">Product ID: 6521FJ</div>
+	                    <div class="item-price-2">$49.99</div>
+
+	                    <button onclick="viewContent('Product 2','6521FJ',49.99)">View Content Details</button> 
+	                    <button id="add-to-cart-button-2" onclick="addToCart('Product 2','6521FJ',49.99)">Add To Cart</button>
+	                </div>
+                </td>
+         		<td>
+         			<div class="box">
+	         			<div class="item-title-3" class="shop-item-title">Product 3</div> 
+	         			<div class="item-product-id-2">Product ID: 4098MD</div>
+	                    <div class="item-price-2" class="shop-item-price">$199.99</div>
+
+	                    <button onclick="viewContent('Product 3','4098MD',199.99)">View Content Details</button> 
+	                    <button id="add-to-cart-button-3" onclick="addToCart('Product 3','4098MD',199.99)">Add To Cart</button> 
+	                </div>
+         		</td>
+         	</tr>
+        </table>
+
+        <button class="checkout" onclick="initiateCheckout()">Initiate Checkout</button>
+
+        <footer>
+
+        </footer>
+
+    </div>
+
+        <!-- BEGIN TIKTOK PIXEL EVENT FUNCTIONS SCRIPT SECTION -->
+        <script>
+        	// BEGIN DO NOT EDIT SECTION 
+        	completeRegistration();
+        	// END DO NOT EDIT SECTION 
+        
+            
+            function pageLoaded() {
+                alert("Hey Vanessa, Page is loaded");
+                
+            }
+            
+            
+            
+        	function completeRegistration() {
+	        	// BEGIN DO NOT EDIT SECTION 
+	        	alert("Required Registration Step" + 
+	        		   "\n" + "Email address provided is email@example.com");
+
+	        	alert("Required Registration Step" + 
+	        		   "\n" + "Phone number provided +15551234567");
+
+	        	var phone = "+15551234567";
+	        	var email = "email@example.com";
+
+	        	console.log("email: " + email);
+	        	console.log("phone: " + phone);
+	        	// END DO NOT EDIT SECTION 
+
+	        	// BEGIN - PLACE YOUR FUNCTIONS IN THIS SECTION 
+                
+                
+                // ---------------- remove comment
+                
+                /*
+                    ttq.identify({
+	        			// ADVANCED MATCHING PARAMETERS 
+                        email: email,
+                        phone_number: phone,
+	        		})	
+                */
+
+                //Event Parameters
+	        	/*	ttq.track("",{
+	        			// EVENT PARAMETERS 
+                        
+	        		}) 
+	        		
+                */
+                    
+                // --------------- end remove comment
+                
+                
+        	    //END - PLACE YOUR FUNCTIONS IN THIS SECTION 
+        	}		
+        	
+
+        	
+        	function addToCart(title, productId, price) { 
+        		// BEGIN HINT: UTILIZE THESE VARIABLES WHEN CONSTRUCTING YOUR CORRESPONDING TIKTOK PIXEL EVENTS 
+        		console.log("addToCart Function")
+        		console.log("title:" + " " + title);
+        		console.log("price:" + " " + price);
+        		console.log("productId:" + " " + productId);
+        		// END HINT: UTILIZE THESE VARIABLES WHEN CONSTRUCTING YOUR CORRESPONDING TIKTOK PIXEL EVENTS 
+                
+               
+                
+           //     var phone = "+15551234567";
+	        //	var email = "email@example.com";
+                
+                
+                
+        		// BEGIN DO NOT EDIT SECTION 
+        		if (title == "Product 1") {
+        			document.getElementById("add-to-cart-button-1").disabled = 'true';
+        		} else if (title == "Product 2") {
+        			document.getElementById("add-to-cart-button-2").disabled = 'true';
+        		} else if (title == "Product 3") {
+        			document.getElementById("add-to-cart-button-3").disabled = 'true';
+        		}
+        		document.getElementById("cart-items").stepUp();
+        		// END DO NOT EDIT SECTION 
+
+        		// BEGIN - PLACE YOUR FUNCTIONS IN THIS SECTION
+                
+
+                ttq.identify({
+                    email: 'email@example.com',
+                    phone_number: '+15551234567',
+                }); 
+                    
+                ttq.track('AddToCart', {
+                        content_id: productId,
+                        title: title,
+                        price: price,
+                        currency: 'USD',
+                }); 
+                
+                alert(title + " is added");
+                
+                
+        		// END - PLACE YOUR FUNCTIONS IN THIS SECTION    		
+        	}
+
+        	function viewContent(title, productId, price) {
+        	    // BEGIN DO NOT EDIT SECTION 
+        	    alert("Mock Product Item Details Popup: " 
+        	    	+ "\n" + "title: " + title 
+        	    	+ "\n" + "price: " + price 
+        	    	+ "\n" + "productId: " +  productId)
+        	    // END DO NOT EDIT SECTION 
+
+        		// BEGIN HINT: UTILIZE THESE VARIABLES WHEN CONSTRUCTING YOUR CORRESPONDING TIKTOK PIXEL EVENT
+        		console.log("viewContent Function")
+        		console.log("title:" + " " + title);
+        		console.log("price:" + " " + price);
+        		console.log("productId:" + " " + productId);
+                
+                ttq.track('ViewContent', {
+                    content_id: productId,
+                    price: price,
+                    title: title,
+                    currency: 'USD',
+                    }); 
+                
+        		// END HINT: UTILIZE THESE VARIABLES WHEN CONSTRUCTING YOUR CORRESPONDING TIKTOK PIXEL EVENT
+
+        		// BEGIN - PLACE YOUR FUNCTIONS IN THIS SECTION 
+                
+                
+                
+                
+        		//ttq.identify({
+        			/* ADVANCED MATCHING PARAMETERS */
+        		//})	
+
+        		//ttq.track("",{
+        			/* EVENT PARAMETERS */
+        		//}) 
+            
+    
+
+        		// END - PLACE YOUR FUNCTIONS IN THIS SECTION 
+        	}
+
+        	function registrationComplete(email, phone) {
+        		// BEGIN HINT: UTILIZE THESE VARIABLES WHEN CONSTRUCTING YOUR CORRESPONDING TIKTOK PIXEL EVENT
+        		console.log("registrationComplete Function")
+        		console.log("email:" + " " + email);
+        		console.log("phonenumber:" + " " + phone);
+        		// END HINT: UTILIZE THESE VARIABLES WHEN CONSTRUCTING YOUR CORRESPONDING TIKTOK PIXEL EVENT
+
+
+        		// BEGIN - PLACE YOUR FUNCTIONS IN THIS SECTION 
+
+        		//ttq.identify({
+        			/* ADVANCED MATCHING PARAMETERS */
+        		//})		
+
+        		//ttq.track("",{
+        			/* EVENT PARAMETERS */
+        		//}) 
+
+        		// END - PLACE YOUR FUNCTIONS IN THIS SECTION 
+
+        		// BEGIN DO NOT EDIT SECTION 
+        	    alert("Registration Complete");
+        	    // END DO NOT EDIT SECTION 
+        	}
+
+        	function initiateCheckout() {
+        		var retVal = confirm("This is a pop up meant to be a mock initiate checkout step - clicking OK will assume that the correct payment information was entered by the customer. Purchase will then complete successfully. HINT: Clicking Cancel should not trigger any events");
+
+        		if (retVal === true) { 
+        		// BEGIN - PLACE YOUR FUNCTIONS IN THIS SECTION 
+
+                    
+                    /*
+        		  ttq.identify({
+        			// ADVANCED MATCHING PARAMETERS 
+                      email: "email@example.com",
+                      phone_number: "+15551234567",
+        		  })	
+                  */
+                    
+                    
+                    
+
+                  // BEGIN HINT - MULTIPLE ITEMS 
+        		  // For multiple products  
+ttq.track('InitiateCheckout', {
+   contents: [
+    {
+       content_id: '01',
+        title:"Product 1",
+        price: 2,
+        currency: 'USD',
+    },
+    {
+       content_id: '02',
+        title: "Product 2",
+        price: 5,
+        currency: 'USD',
+    }],
+    value: 7,
+    currency: 'USD',
+});
+        		  // END HINT - MULTIPLE ITEMS 
+
+        		// END - PLACE YOUR FUNCTIONS IN THIS SECTION 
+
+                // BEGIN DO NOT EDIT SECTION 
+        		   completePayment();
+        		} else {	
+        		   alert("Payment step cancelled!");
+                   return false;    
+        		}
+        		// END DO NOT EDIT SECTION 
+        	}
+
+        	// HINT: This is the dedicated function for Complete Payment
+        	function completePayment() {
+        		// BEGIN - PLACE YOUR FUNCTIONS IN THIS SECTION 
+                
+                
+                
+                /*
+        		ttq.identify({
+        			// ADVANCED MATCHING PARAMETERS 
+                      email: "email@example.com",
+                      phone_number: "+15551234567",
+        		  })	
+                  
+                  */
+                
+                
+                
+                  // BEGIN HINT - MULTIPLE ITEMS 
+        		  ttq.track('CompletePayment', {
+   contents: [
+    {
+       content_id: '01',
+        title:"Product 1",
+        price: 2,
+        currency: 'USD',
+    },
+    {
+       content_id: '02',
+        title: "Product 2",
+        price: 5,
+        currency: 'USD',
+    }],
+    value: 7,
+    currency: 'USD',
+});
+                  
+        		  // END HINT - MULTIPLE ITEMS 
+
+        		// END - PLACE YOUR FUNCTIONS IN THIS SECTION 	
+
+        		// BEGIN DO NOT EDIT SECTION 
+        		alert("Payment Completed - Purchase Successful")
+        		// END DO NOT EDIT SECTION 
+        	}
+        </script>
+        <!-- END TIKTOK PIXEL EVENT FUNCTIONS SCRIPT SECTION -->
+
+        <!-- BEGIN STYLING SECTION - DO NOT EDIT -->
+		<style type="text/css">
+
+		h1 + div {
+			padding-left: 370px;
+		}
+
+		div {
+			padding: 10px;
+		}
+
+		table {
+			padding-bottom: 20px;
+		}
+
+		footer {
+			padding: 10px;
+		}
+
+		.box {
+			box-sizing: content-box;    
+			width: 200px;
+			height: 180px;
+			padding: 20px;    
+			border: 2px solid black;
+			text-align: center;
+            }
+
+		.cart {		
+			float: right;
+		}
+
+		.content {
+			max-width: 800px;
+			margin: auto;
+		}
+
+		.title {
+			display: inline-block;
+		}
+
+		#cart-items {
+			border: 0;
+		}
+    	</style>
+    	<!-- END STYLING SECTION - DO NOT EDIT -->
+
+	</body>
+</html>
