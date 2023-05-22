@@ -180,19 +180,47 @@
         		// BEGIN - PLACE YOUR FUNCTIONS IN THIS SECTION
                 
 
-                ttq.identify({
-                    email: 'email@example.com',
-                    phone_number: '+15551234567',
-                }); 
-                    
-                ttq.track('AddToCart', {
+                
+                
+                 // Add To Cart Event commented 
+                
+                
+//                ttq.identify({
+//                    email: 'email@example.com',
+//                    phone_number: '+15551234567',
+//                }); 
+//                    
+//                ttq.track('AddToCart', {
+//                        content_id: productId,
+//                        title: title,
+//                        price: price,
+//                        currency: 'USD',
+//                }); 
+//                
+//                alert(title + " is added");
+                
+                
+                //
+                
+                
+                
+                
+                // Custom Event here
+                
+                ttq.track('CustomEventVanessa', {
                         content_id: productId,
                         title: title,
                         price: price,
                         currency: 'USD',
                 }); 
                 
-                alert(title + " is added");
+                // End of Custom Event
+                
+                
+                
+                
+                
+                
                 
                 
         		// END - PLACE YOUR FUNCTIONS IN THIS SECTION    		
